@@ -1,0 +1,57 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular con gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7931E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD23F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7931E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD23F;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Círculo de fondo -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Burbuja de chat principal -->
+  <path d="M 180 200 Q 180 180 200 180 L 320 180 Q 340 180 340 200 L 340 280 Q 340 300 320 300 L 280 300 L 260 320 L 240 300 L 200 300 Q 180 300 180 280 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Burbuja de chat secundaria -->
+  <path d="M 220 240 Q 220 220 240 220 L 300 220 Q 320 220 320 240 L 320 260 Q 320 280 300 280 L 280 280 L 260 300 L 240 280 L 240 280 Q 220 280 220 260 Z" 
+        fill="white" opacity="0.8"/>
+  
+  <!-- Elementos de fuego en la parte superior -->
+  <g transform="translate(256, 120)">
+    <!-- Llamas principales -->
+    <path d="M -20 -10 Q -15 -25 -10 -10 Q -5 -20 0 -10 Q 5 -20 10 -10 Q 15 -25 20 -10 Q 10 -5 0 0 Q -10 -5 -20 -10 Z" 
+          fill="url(#fireGradient)" opacity="0.9"/>
+    
+    <!-- Llamas secundarias -->
+    <path d="M -15 -5 Q -10 -15 -5 -5 Q 0 -10 5 -5 Q 10 -15 15 -5 Q 8 -2 0 2 Q -8 -2 -15 -5 Z" 
+          fill="url(#fireGradient)" opacity="0.7"/>
+    
+    <!-- Chispas -->
+    <circle cx="-12" cy="-8" r="2" fill="#FFD23F" opacity="0.8"/>
+    <circle cx="12" cy="-8" r="2" fill="#FFD23F" opacity="0.8"/>
+    <circle cx="0" cy="-12" r="1.5" fill="#FFD23F" opacity="0.6"/>
+  </g>
+  
+  <!-- Puntos de elipsis en las burbujas -->
+  <circle cx="220" cy="200" r="4" fill="#666"/>
+  <circle cx="240" cy="200" r="4" fill="#666"/>
+  <circle cx="260" cy="200" r="4" fill="#666"/>
+  
+  <circle cx="240" cy="240" r="3" fill="#999"/>
+  <circle cx="260" cy="240" r="3" fill="#999"/>
+  
+  <!-- Detalles de brillo -->
+  <circle cx="200" cy="180" r="15" fill="white" opacity="0.3"/>
+  <circle cx="320" cy="200" r="10" fill="white" opacity="0.2"/>
+</svg> 
